@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-
+import companySlice from '@entities/company/model/slice';
 
 export const store = configureStore({
   reducer: {
-    
+    companies: companySlice.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
