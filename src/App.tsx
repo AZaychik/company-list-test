@@ -1,11 +1,12 @@
+import { store } from "@app/store"
+import { MainPage } from "@pages/main-page/ui/page"
+import { Provider } from "react-redux"
 
-function App() {
-
+export const App: React.FC = () => {
   return (
-    <>
-
-    </>
+    <Provider store={store}>
+      <MainPage />
+    </Provider>
   )
 }
 
-export default App
