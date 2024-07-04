@@ -5,7 +5,7 @@ export class EmployeeService {
 
   /** Извлечь сотрудников. */
   static async fetchEmployees(): Promise<Employee[]> {
-    const response = await fetch('/mock/employees.json');
+    const response = await fetch('/data/employees.json');
     if (!response.ok) {
       throw new Error('Ошибка при получении списка сотрудников');
     }

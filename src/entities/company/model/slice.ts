@@ -8,7 +8,6 @@ export type CompanyWithSelection = Company & {
 
 export interface CompanyState {
   companies: CompanyWithSelection[];
-  selectedCompany?: CompanyWithSelection;
   isLoading: boolean;
   error?: string;
 }
@@ -22,12 +21,11 @@ export const companySlice = createSlice({
   name: 'companies',
   initialState,
   reducers: {
-    selectCompanySelection: (state, action: PayloadAction<Company["id"]>) => {
-      const company = state.companies.find(company => company.id === action.payload);
-      if (company) {
-        company.selected = !company.selected;
+    selectCompanySelection: (state, action: PayloadAction<{ id: Company["id"], toggle: boolean }>) => {
+      const index = state.companies.findIndex(company => company.id === action.payload.id);
+      if (index !== -1) {
+        state.companies[index].selected = action.payload.toggle;
       }
-      state.selectedCompany = company;
     },
     selectAllCompanies: (state) => {
       const allSelected = state.companies.every(company => company.selected);

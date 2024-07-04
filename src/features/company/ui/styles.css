@@ -1,6 +1,5 @@
 .company-table {
   border-collapse: collapse;
-  margin: 20px 0;
   font-family: Arial, sans-serif;
 }
 
@@ -12,14 +11,18 @@
 .company-table th,
 .company-table td {
   padding: 10px;
-  text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
 .company-row {
+  height: 45px;
   transition: background-color 0.3s ease;
 }
 
 .company-row.selected {
   background-color: lightblue;
+}
+
+.company-row__employee-count {
+  text-align: center;
 }

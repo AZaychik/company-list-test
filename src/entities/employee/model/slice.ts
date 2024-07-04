@@ -3,26 +3,26 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { Employee } from './types';
 import { fetchedEmployees } from './dispatchers';
 
-interface EmployeeState {
+export interface EmployeeState {
   employees: Employee[];
-  selectedEmployees?: Employee[]
+  selectedEmployees: Record<string, Employee[]>;
   isLoading: boolean;
   error?: string;
 }
 
 export const initialState: EmployeeState = {
   employees: [],
+  selectedEmployees: {},
   isLoading: false,
 };
-
 
 export const employeeSlice = createSlice({
   name: 'employees',
   initialState,
   reducers: {
     selectedEmployees: (state, action: PayloadAction<CompanyWithSelection>) => {
-      state.selectedEmployees = [];
-      state.selectedEmployees = state.employees.filter(employee => action.payload.employeeIds.includes(employee.id));
+      const { id, employeeIds } = action.payload;
+      state.selectedEmployees[id] = state.employees.filter(employee => employeeIds.includes(employee.id));
     },
   },
   extraReducers: (builder) =>
