@@ -8,7 +8,7 @@ import { selectCompanies } from '@entities/company/model';
 
 export const CompanyTable: React.FC = () => {
   const companies = useAppSelector(selectCompanies);
-
+    
   return (
     <table className="company-table">
       <CompanyHeader />
