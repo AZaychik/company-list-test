@@ -1,11 +1,14 @@
-import { CompanyWithSelection } from '@entities/company/model/slice';
 import React from 'react';
+import { companyActions } from '@entities/company/model';
+import { CompanyWithSelection } from '@entities/company/model/slice';
+import { useAppDispatch } from '@shared/lib/hooks';
 
 type CompanyRowProps = {
   company: CompanyWithSelection;
 };
 
 export const CompanyRow: React.FC<CompanyRowProps> = ({ company }) => {
+  const dispatch = useAppDispatch();
 
   return (
     <tr className={`company-row ${company.selected ? 'selected' : ''}`}>
@@ -13,6 +16,7 @@ export const CompanyRow: React.FC<CompanyRowProps> = ({ company }) => {
         <input
           type="checkbox"
           checked={company.selected}
+          onChange={() => dispatch(companyActions.selectCompanySelection(company.id))}
         />
       </td>
       <td>{company.name}</td>
