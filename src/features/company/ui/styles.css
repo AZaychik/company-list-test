@@ -26,3 +26,40 @@
 .company-row__employee-count {
   text-align: center;
 }
+
+.add-company-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+}
+/* AddCompanyForm.module.css */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.input-field {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.delete-form {
+  margin-top: 30px;  
+}

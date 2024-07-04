@@ -34,6 +34,12 @@ export const companySlice = createSlice({
         selected: !allSelected,
       }));
     },
+    addCompany: (state, action: PayloadAction<CompanyWithSelection>) => {
+      state.companies = [action.payload, ...state.companies];
+    },
+    removeCompany: (state, action: PayloadAction<Company["id"]>) => {
+      state.companies = state.companies.filter(company => company.id !== action.payload);
+    },
   },
   extraReducers: (builder) =>
     builder
