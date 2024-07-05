@@ -8,7 +8,7 @@ import { AddCompanyForm, DeleteCompanyForm } from "@features/company/ui/form";
 import { useAppDispatch, useAppSelector } from "@shared/lib/hooks";
 import "./styles.css";
 
-export const MAX_COUNT_COMPANY_PER_PAGE = 20;
+export const MAX_COUNT_COMPANY_PER_PAGE = 25;
 
 export const MainPage: React.FC = () => {
   const dispatch = useAppDispatch();
