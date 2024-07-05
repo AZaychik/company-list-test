@@ -3,4 +3,4 @@ export type Employee = {
   name: string;
   surname: string;
   position: string;
-}
+};

@@ -4,18 +4,18 @@ import { useAppSelector } from "@shared/lib/hooks";
 
 type EmployeeTableProps = {
   company: CompanyWithSelection;
-}
+};
 
 export const EmployeeTable: React.FC<EmployeeTableProps> = ({ company }) => {
   const selectedEmployees = useAppSelector(selectSelectedEmployees);
   const currentCompany = selectedEmployees[company.id];
 
   if (!currentCompany) {
-    return <div>Компания не выбрана</div>
+    return <div>Компания не выбрана</div>;
   }
 
   if (!selectedEmployees) {
-    return <div>У компании не найдено сотрудников! -_-</div>
+    return <div>У компании не найдено сотрудников! -_-</div>;
   }
 
   return (
@@ -31,7 +31,7 @@ export const EmployeeTable: React.FC<EmployeeTableProps> = ({ company }) => {
           </tr>
         </thead>
         <tbody>
-          {currentCompany.map((employee) => (
+          {currentCompany.map(employee => (
             <tr key={employee.id}>
               <td>{employee.name}</td>
               <td>{employee.surname}</td>

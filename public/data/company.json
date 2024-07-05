@@ -13,28 +13,19 @@
     "id": "d3f4g5h6-i7j8-k9l0-m1n2-o3p4q5r6s7t8",
     "name": "Компания Бета",
     "address": "Бульвар Примеров, 20",
-    "employeeIds": [
-      "p0o9i8u7-y6t5-r4e3-w2q1-1a2b3c4d5e6f",
-      "m4n3b2v1-c1v2-b3n4-m5n6-b7v8c9d0e1f2"
-    ]
+    "employeeIds": ["p0o9i8u7-y6t5-r4e3-w2q1-1a2b3c4d5e6f", "m4n3b2v1-c1v2-b3n4-m5n6-b7v8c9d0e1f2"]
   },
   {
     "id": "v9b8n7m6-k5j4-h3g2-f1d0-s1a2p3o4i5u6",
     "name": "Компания Гамма",
     "address": "Проспект Примерный, 30",
-    "employeeIds": [
-      "z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2",
-      "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"
-    ]
+    "employeeIds": ["z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2", "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"]
   },
   {
     "id": "a4b5c6d7-e8f9-g0h1-i2j3-k4l5m6n7o8p9",
     "name": "Компания Дельта",
     "address": "Площадь Независимости, 40",
-    "employeeIds": [
-      "l1k2j3h4-g5f6-d7s8-a9p0-r1q2w3e4t5y",
-      "u7i8o9p0-a1s2d3f4-g5h6j7k8-l9m0n1b2v3c"
-    ]
+    "employeeIds": ["l1k2j3h4-g5f6-d7s8-a9p0-r1q2w3e4t5y", "u7i8o9p0-a1s2d3f4-g5h6j7k8-l9m0n1b2v3c"]
   },
   {
     "id": "q1w2e3r4-t5y6-u7i8-o9p0-a1s2d3f4g5h6",
@@ -50,53 +41,37 @@
     "id": "u3v4w5x6-y7z8-a9b0-c1d2-e3f4g5h6i7j8",
     "name": "Компания Ита",
     "address": "Проспект Иты, 80",
-    "employeeIds": [
-      "t0u1v2w3-x4y5-z6a7-b8c9-d0e1f2g3h4i5"  
-    ]
+    "employeeIds": ["t0u1v2w3-x4y5-z6a7-b8c9-d0e1f2g3h4i5"]
   },
   {
     "id": "h7i8j9k0-l1m2-n3o4-p5q6-r7s8t9u0v1w2",
     "name": "Компания Капа",
     "address": "Площадь Капы, 90",
-    "employeeIds": [
-      "g8h9i0j1-k2l3-m4n5-o6p7-q8r9s0t1u2v3",
-      "w3x4y5z6-a7b8-c9d0-e1f2-g3h4i5j6k7l8"
-    ]
+    "employeeIds": ["g8h9i0j1-k2l3-m4n5-o6p7-q8r9s0t1u2v3", "w3x4y5z6-a7b8-c9d0-e1f2-g3h4i5j6k7l8"]
   },
   {
     "id": "t1u2v3w4-x5y6-z7a8-b9c0-d1e2f3g4h5i6",
     "name": "Компания Ламда",
     "address": "Аллея Ламды, 100",
-    "employeeIds": [
-      "s2t3u4v5-w6x7-y8z9-a0b1-c2d3e4f5g6h7",
-      "i8j9k0l1-m2n3-o4p5-q6r7-s8t9u0v1w2x3"
-    ]
+    "employeeIds": ["s2t3u4v5-w6x7-y8z9-a0b1-c2d3e4f5g6h7", "i8j9k0l1-m2n3-o4p5-q6r7-s8t9u0v1w2x3"]
   },
   {
     "id": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
     "name": "Компания Зета",
     "address": "Улица Зети, 60",
-    "employeeIds": [
-      "a2b3c4d5-e6f7-g8h9-i0j1-k2l3m4n5o6p",
-      "q3r4s5t6-u7v8-w9x0-y1z2-a3b4c5d6e7f8"
-    ]
+    "employeeIds": ["a2b3c4d5-e6f7-g8h9-i0j1-k2l3m4n5o6p", "q3r4s5t6-u7v8-w9x0-y1z2-a3b4c5d6e7f8"]
   },
   {
     "id": "j1k2l3m4-n5o6-p7q8-r9s0-t1u2v3w4x5y6",
     "name": "Компания Эта",
     "address": "Бульвар Эты, 70",
-    "employeeIds": [
-      "b3c4d5e6-f7g8-h9i0-j1k2-l3m4n5o6p7q",
-      "r4s5t6u7-v8w9-x0y1-z2a3-b4c5d6e7f8g9"
-    ]
+    "employeeIds": ["b3c4d5e6-f7g8-h9i0-j1k2-l3m4n5o6p7q", "r4s5t6u7-v8w9-x0y1-z2a3-b4c5d6e7f8g9"]
   },
   {
     "id": "s3t4u5v6-x7y8-z9a0-b1c2-d3e4f5g6h7i8",
     "name": "Компания Ми",
     "address": "Улица Ми, 110",
-    "employeeIds": [
-      "r4s5t6u7-v8w9-x0y1-z2a3-b4c5d6e7f8g9"
-    ]
+    "employeeIds": ["r4s5t6u7-v8w9-x0y1-z2a3-b4c5d6e7f8g9"]
   },
   {
     "id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
@@ -114,28 +89,19 @@
     "id": "g9h8i7j6-k5l4-m3n2-o1p0-q2r3s4t5u6v7",
     "name": "Компания Пи",
     "address": "Площадь Пи, 140",
-    "employeeIds": [
-      "z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2",
-      "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"
-    ]
+    "employeeIds": ["z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2", "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"]
   },
   {
     "id": "j0k1l2m3-n4o5-p6q7-r8s9-t0u1v2w3x4y5",
     "name": "Компания Ро",
     "address": "Улица Ро, 150",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "m3n4o5p6-q7r8-s9t0-u1v2-w3x4y5z6",
     "name": "Компания Сигма",
     "address": "Бульвар Сигма, 160",
-    "employeeIds": [
-      "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
-      "u7v8w9x0-y1z2-a3b4-c5d6e7f8g9h0"
-    ]
+    "employeeIds": ["e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0", "u7v8w9x0-y1z2-a3b4-c5d6e7f8g9h0"]
   },
   {
     "id": "p6q7r8s9-t0u1-v2w3-x4y5-z6a7b8c9",
@@ -147,163 +113,109 @@
     "id": "v2w3x4y5-z6a7-b8c9-d0e1-f2g3h4i5",
     "name": "Компания Фи",
     "address": "Площадь Фи, 180",
-    "employeeIds": [
-      "z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2",
-      "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"
-    ]
+    "employeeIds": ["z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2", "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"]
   },
   {
     "id": "x4y5z6a7-b8c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x4y5z6a7-1b8c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z6a7-b8c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x4y427-b8c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x43123b8c9-d0e134i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z123c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z123-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z6a7-3454i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z6a7-b8c9-5675j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z6a7-b8c9-d0e1-f123",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z6a7-4564i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x4314g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x41231-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "1237-b8c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "53453457-b8c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z6a7-345325i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "x435z32458c9-d0e1-f2g3-h4i5j6k7",
     "name": "Компания Хи",
     "address": "Улица Хи, 190",
-    "employeeIds": [
-      "a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8",
-      "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"
-    ]
+    "employeeIds": ["a3b4c5d6-e7f8-g9h0-i1j2-k3l4m5n6o7p8", "q9s0t1u2-v3w4-x5y6-z7a8-b9c0d1e2"]
   },
   {
     "id": "d4e5f6g7-h823o5p6q7r8s9",

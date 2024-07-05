@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { companyActions, selectCompanies } from '@entities/company/model';
-import { useAppDispatch, useAppSelector } from '@shared/lib/hooks';
+import React, { useEffect, useState } from "react";
+import { companyActions, selectCompanies } from "@entities/company/model";
+import { useAppDispatch, useAppSelector } from "@shared/lib/hooks";
 
 export const CompanyHeader: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -15,7 +15,7 @@ export const CompanyHeader: React.FC = () => {
     if (companies.length === 0) {
       setAllSelected(false);
     } else {
-      const allCompaniesSelected = companies.every((company) => company.selected);
+      const allCompaniesSelected = companies.every(company => company.selected);
       setAllSelected(allCompaniesSelected);
     }
   }, [companies]);

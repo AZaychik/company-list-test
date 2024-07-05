@@ -1,7 +1,7 @@
-import { CompanyWithSelection } from '@entities/company/model/slice';
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Employee } from './types';
-import { fetchedEmployees } from './dispatchers';
+import { CompanyWithSelection } from "@entities/company/model/slice";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { Employee } from "./types";
+import { fetchedEmployees } from "./dispatchers";
 
 export interface EmployeeState {
   employees: Employee[];
@@ -17,7 +17,7 @@ export const initialState: EmployeeState = {
 };
 
 export const employeeSlice = createSlice({
-  name: 'employees',
+  name: "employees",
   initialState,
   reducers: {
     selectedEmployees: (state, action: PayloadAction<CompanyWithSelection>) => {
@@ -25,22 +25,22 @@ export const employeeSlice = createSlice({
       state.selectedEmployees[id] = state.employees.filter(employee => employeeIds.includes(employee.id));
     },
   },
-  extraReducers: (builder) =>
+  extraReducers: builder =>
     builder
-      .addCase(fetchedEmployees.pending, (state) => {
+      .addCase(fetchedEmployees.pending, state => {
         state.error = undefined;
         state.isLoading = true;
       })
       .addCase(fetchedEmployees.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.employees = action.payload
+        state.employees = action.payload;
       })
       .addCase(fetchedEmployees.rejected, (state, action) => {
         if (action.error.message) {
           state.error = action.error.message;
         }
         state.isLoading = false;
-      })
+      }),
 });
 
 export const { reducer: employeeReducer, actions: employeeActions } = employeeSlice;
