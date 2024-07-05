@@ -19,13 +19,18 @@
     "id": "v9b8n7m6-k5j4-h3g2-f1d0-s1a2p3o4i5u6",
     "name": "Компания Гамма",
     "address": "Проспект Примерный, 30",
-    "employeeIds": ["z7x6c5v4-b3n2-m1a0-k9j8-h7g6f5d4s3a2", "q1w2e3r4-t5y6-u7i8-o9p0-1q2w3e4r5t6y"]
+    "employeeIds": [
+      "s2t3u4v5-1237-y8z9-a0b1-c2d3e4f5g6h7",
+      "i8t3ul1-234-o4p5-q6r7-s8t9u0v1w2x3",
+      "at3u-e6f7-g8h9-i0j1-k2l3m4n5o6p",
+      "q3r4s5t6-u7v8-w9x0-y1z2-a3bq3r4s5t"
+    ]
   },
   {
     "id": "a4b5c6d7-e8f9-g0h1-i2j3-k4l5m6n7o8p9",
     "name": "Компания Дельта",
     "address": "Площадь Независимости, 40",
-    "employeeIds": ["l1k2j3h4-g5f6-d7s8-a9p0-r1q2w3e4t5y", "u7i8o9p0-a1s2d3f4-g5h6j7k8-l9m0n1b2v3c"]
+    "employeeIds": ["at3u-e6f7-g8h9-i0j1-k2l3m4n5o6p", "q3r4s5t6-u7v8-w9x0-y1z2-a3bq3r4s5t"]
   },
   {
     "id": "q1w2e3r4-t5y6-u7i8-o9p0-a1s2d3f4g5h6",
@@ -299,13 +304,25 @@
     "id": "d4e5f6g7-h8i9-j0k1567567p6q7r8s9",
     "name": "Компания Ню",
     "address": "Бульвар Ню, 120",
-    "employeeIds": []
+    "employeeIds": [
+      "q3r4s5t-f7g8-h9i0-j1k2-l3m4n5o6p7q",
+      "r4s5t6u7-q3r4s5t-z2a3-b4c5d6e7f8g9",
+      "1237-vq3r4s5t-z2a3-b4c5d6e7f8g9",
+      "zq3r4s5t4-b3n2-m1a0-k9j8-h7g6f5d4s3a21",
+      "q1w2e3rq3r4s5tu7i8-o9p0-1q2w3e4r5t6y3"
+    ]
   },
   {
     "id": "d4e5f6g7-h8i9-j1231237r8s9",
     "name": "Компания Ню",
     "address": "Бульвар Ню, 120",
-    "employeeIds": []
+    "employeeIds": [
+      "q3r4s5t-f7g8-h9i0-j1k2-l3m4n5o6p7q",
+      "r4s5t6u7-q3r4s5t-z2a3-b4c5d6e7f8g9",
+      "1237-vq3r4s5t-z2a3-b4c5d6e7f8g9",
+      "zq3r4s5t4-b3n2-m1a0-k9j8-h7g6f5d4s3a21",
+      "q1w2e3rq3r4s5tu7i8-o9p0-1q2w3e4r5t6y3"
+    ]
   },
   {
     "id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q123",
