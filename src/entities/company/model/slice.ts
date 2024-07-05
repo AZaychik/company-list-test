@@ -1,33 +1,35 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { Company } from "./types";
-import { fetchedCompanies } from './dispatchers';
+import { fetchedCompanies } from "./dispatchers";
 
 export type CompanyWithSelection = Company & {
   selected: boolean;
-}
+};
 
 export interface CompanyState {
   companies: CompanyWithSelection[];
   isLoading: boolean;
   error?: string;
+  hasNext: boolean;
 }
 
 export const initialState: CompanyState = {
   companies: [],
   isLoading: false,
+  hasNext: false,
 };
 
 export const companySlice = createSlice({
-  name: 'companies',
+  name: "companies",
   initialState,
   reducers: {
-    selectCompanySelection: (state, action: PayloadAction<{ id: Company["id"], toggle: boolean }>) => {
+    selectCompanySelection: (state, action: PayloadAction<{ id: Company["id"]; toggle: boolean }>) => {
       const index = state.companies.findIndex(company => company.id === action.payload.id);
       if (index !== -1) {
         state.companies[index].selected = action.payload.toggle;
       }
     },
-    selectAllCompanies: (state) => {
+    selectAllCompanies: state => {
       const allSelected = state.companies.every(company => company.selected);
       state.companies = state.companies.map(company => ({
         ...company,
@@ -41,15 +43,16 @@ export const companySlice = createSlice({
       state.companies = state.companies.filter(company => company.id !== action.payload);
     },
   },
-  extraReducers: (builder) =>
+  extraReducers: builder =>
     builder
-      .addCase(fetchedCompanies.pending, (state) => {
+      .addCase(fetchedCompanies.pending, state => {
         state.error = undefined;
         state.isLoading = true;
       })
       .addCase(fetchedCompanies.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.companies = action.payload.map(company => ({
+        state.hasNext = action.payload.hasNext;
+        state.companies = action.payload.entities.map(company => ({
           ...company,
           selected: false,
         }));
@@ -59,7 +62,7 @@ export const companySlice = createSlice({
           state.error = action.error.message;
         }
         state.isLoading = false;
-      })
+      }),
 });
 
 export const { reducer: companyReducer, actions: companyActions } = companySlice;
