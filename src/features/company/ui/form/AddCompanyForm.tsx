@@ -1,7 +1,7 @@
-import { companyActions } from "@entities/company/model";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
+import { companyActions } from "@entities/company/model";
+import { useActionCreators } from "@shared/lib/hooks";
 
 type FormData = {
   id: string;
@@ -18,8 +18,8 @@ const ininitialFormData = {
 };
 
 export const AddCompanyForm = () => {
-  const dispatch = useDispatch();
   const [formData, setFormData] = useState<FormData>(ininitialFormData);
+  const actions = useActionCreators(companyActions);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData(prevForm => ({
@@ -29,17 +29,16 @@ export const AddCompanyForm = () => {
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const newCompany = {
+      id: uuidv4(),
+      name: formData.name.trim(),
+      employeeIds: [],
+      address: formData.address.trim(),
+      selected: false,
+    };
     event.preventDefault();
     if (formData.name.trim()) {
-      dispatch(
-        companyActions.addCompany({
-          id: uuidv4(),
-          name: formData.name.trim(),
-          employeeIds: [],
-          address: formData.address.trim(),
-          selected: false,
-        })
-      );
+      actions.addCompany(newCompany);
       setFormData(ininitialFormData);
     }
   };

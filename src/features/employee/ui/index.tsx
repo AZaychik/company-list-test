@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useAppSelector, useAppDispatch } from "@shared/lib/hooks";
+import { useAppSelector, useActionCreators } from "@shared/lib/hooks";
 import { employeeActions } from "@entities/employee/model";
 import { selectCompaniesSelected, selectOneCompanySelected } from "@entities/company/model";
 import { EmployeeTable } from "./EmployeeTable";
@@ -7,14 +7,14 @@ import { EmployeeTable } from "./EmployeeTable";
 import "./styles.css";
 
 export const EmployeeTableWrapper: React.FC = () => {
-  const dispatch = useAppDispatch();
+  const actions = useActionCreators(employeeActions);
   const selectedCompanies = useAppSelector(selectCompaniesSelected);
   const isAnyCompanySelected = useAppSelector(selectOneCompanySelected);
 
   useEffect(() => {
     if (selectedCompanies.length > 0) {
       selectedCompanies.forEach(company => {
-        dispatch(employeeActions.selectedEmployees(company));
+        actions.selectedEmployees(company);
       });
     }
   }, [selectedCompanies]);

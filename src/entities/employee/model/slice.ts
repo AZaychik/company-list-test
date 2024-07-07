@@ -2,18 +2,19 @@ import { CompanyWithSelection } from "@entities/company/model/slice";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { Employee } from "./types";
 import { fetchedEmployees } from "./dispatchers";
+import { Statuses } from "@shared/lib/types";
+import { statusesMap } from "@shared/lib/constants";
 
 export interface EmployeeState {
   employees: Employee[];
   selectedEmployees: Record<string, Employee[]>;
-  isLoading: boolean;
-  error?: string;
+  status: Statuses;
 }
 
 export const initialState: EmployeeState = {
   employees: [],
   selectedEmployees: {},
-  isLoading: false,
+  status: statusesMap.init,
 };
 
 export const employeeSlice = createSlice({
@@ -28,18 +29,16 @@ export const employeeSlice = createSlice({
   extraReducers: builder =>
     builder
       .addCase(fetchedEmployees.pending, state => {
-        state.error = undefined;
-        state.isLoading = true;
+        state.status = "loading";
       })
       .addCase(fetchedEmployees.fulfilled, (state, action) => {
-        state.isLoading = false;
+        state.status = "success";
         state.employees = action.payload;
       })
       .addCase(fetchedEmployees.rejected, (state, action) => {
         if (action.error.message) {
-          state.error = action.error.message;
+          state.status = 'error';
         }
-        state.isLoading = false;
       }),
 });
 

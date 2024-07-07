@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { companyActions, selectCompanies } from "@entities/company/model";
-import { useAppDispatch, useAppSelector } from "@shared/lib/hooks";
+import { useActionCreators, useAppSelector } from "@shared/lib/hooks";
 
 export const CompanyHeader: React.FC = () => {
-  const dispatch = useAppDispatch();
   const companies = useAppSelector(selectCompanies);
   const [allSelected, setAllSelected] = useState(false);
+  const actions = useActionCreators(companyActions);
 
   const handleChangeToggleAll = () => {
-    dispatch(companyActions.selectAllCompanies());
+    actions.selectAllCompanies();
   };
 
   useEffect(() => {

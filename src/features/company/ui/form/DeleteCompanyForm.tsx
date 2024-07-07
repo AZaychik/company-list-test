@@ -1,15 +1,14 @@
 import { companyActions, selectCompaniesSelected } from "@entities/company/model";
-import { useAppSelector } from "@shared/lib/hooks";
-import { useDispatch } from "react-redux";
+import { useActionCreators, useAppSelector } from "@shared/lib/hooks";
 
 export const DeleteCompanyForm = () => {
-  const dispatch = useDispatch();
+  const actions = useActionCreators(companyActions);
   const companiesSelected = useAppSelector(selectCompaniesSelected);
 
   const handleDelete = () => {
     if (companiesSelected.length > 0) {
       companiesSelected.forEach(company => {
-        dispatch(companyActions.removeCompany(company.id));
+        actions.removeCompany(company.id);
       });
     }
   };

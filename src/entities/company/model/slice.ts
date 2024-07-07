@@ -1,6 +1,8 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { Company } from "./types";
 import { fetchedCompanies } from "./dispatchers";
+import { Statuses } from "@shared/lib/types";
+import { statusesMap } from "@shared/lib/constants";
 
 export type CompanyWithSelection = Company & {
   selected: boolean;
@@ -8,14 +10,13 @@ export type CompanyWithSelection = Company & {
 
 export interface CompanyState {
   companies: CompanyWithSelection[];
-  isLoading: boolean;
-  error?: string;
+  status: Statuses;
   hasNext: boolean;
 }
 
 export const initialState: CompanyState = {
   companies: [],
-  isLoading: false,
+  status: statusesMap.init,
   hasNext: false,
 };
 
@@ -46,11 +47,10 @@ export const companySlice = createSlice({
   extraReducers: builder =>
     builder
       .addCase(fetchedCompanies.pending, state => {
-        state.error = undefined;
-        state.isLoading = true;
+        state.status = statusesMap.loading;
       })
       .addCase(fetchedCompanies.fulfilled, (state, action) => {
-        state.isLoading = false;
+        state.status = statusesMap.success;
         state.hasNext = action.payload.hasNext;
         state.companies = action.payload.entities.map(company => ({
           ...company,
@@ -59,9 +59,8 @@ export const companySlice = createSlice({
       })
       .addCase(fetchedCompanies.rejected, (state, action) => {
         if (action.error.message) {
-          state.error = action.error.message;
+          state.status = statusesMap.error;
         }
-        state.isLoading = false;
       }),
 });
 

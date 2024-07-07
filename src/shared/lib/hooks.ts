@@ -1,10 +1,19 @@
-import { RefObject, useEffect, useState } from "react";
+import { RefObject, useEffect, useMemo, useState } from "react";
 import { AppDispatch, RootState } from "@app/store";
 import { useSelector, TypedUseSelectorHook, useDispatch } from "react-redux";
+import { ActionCreatorsMapObject, bindActionCreators } from "@reduxjs/toolkit";
 
 /** Typed `useDispatch` hook. */
 export const useAppDispatch = (): AppDispatch => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+
+/** Обертка, чтобы каждый раз не вызывать dispatch c нужным action.  */
+export const useActionCreators = <Actions extends ActionCreatorsMapObject>(actions: Actions) => {
+  const dispatch = useAppDispatch();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  return useMemo(() => bindActionCreators(actions, dispatch), []);
+};
 
 /**
  * Intersection observer hook https://usehooks-ts.com/react-hook/use-intersection-observer.

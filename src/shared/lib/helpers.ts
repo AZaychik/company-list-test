@@ -7,3 +7,7 @@ export function isObject(value: unknown): value is object {
 export function isDefined<T>(value: T | null | undefined): value is T {
   return value !== null && value !== undefined;
 }
+
+export function delay(ms: number) {
+  return new Promise( resolve => setTimeout(resolve, ms) );
+}

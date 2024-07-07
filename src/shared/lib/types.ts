@@ -13,3 +13,5 @@ export interface QueryOptionsForInfinityScroll<T extends Entity<T>> {
   countOfEntities: number;
   lastVisibleEntity: T | null;
 }
+
+export type Statuses = "init" | "loading" | "error" | "success";

@@ -6,6 +6,6 @@ export {
   selectOneCompanySelected,
   selectCompaniesSelected,
   selectHasNextPageOfCompany,
-  selectIsCompanyLoading,
+  selectCompaniesStatus,
 } from "./selectors";
 export { companyReducer, companyActions } from "./slice";

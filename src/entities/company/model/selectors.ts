@@ -8,7 +8,7 @@ export const selectCompaniesSelected = createSelector(
   companies => companies.filter(company => company.selected)
 );
 
-export const selectIsCompanyLoading = (state: RootState) => state.companies.isLoading;
+export const selectCompaniesStatus = (state: RootState) => state.companies.status;
 
 export const selectOneCompanySelected = (state: RootState) =>
   state.companies.companies.some(company => company.selected);
